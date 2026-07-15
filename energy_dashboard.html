@@ -1,3 +1,4 @@
+Modbus connected on attempt 2
 <!doctype html>
 <html lang="en">
 <head>
@@ -174,16 +175,16 @@ body.controls-hidden #legendGroup{transform:translateY(-150px)}
 
 
 
-  <text x="40" y="368" class="nodeValue" fill="var(--solar)" id="batterySocNodeValue" style="font-size:40px">44%</text>
+  <text x="40" y="368" class="nodeValue" fill="var(--solar)" id="batterySocNodeValue" style="font-size:40px">43%</text>
   <text x="90" y="700" class="nodeValue" fill="var(--solar)" id="battery1SocNodeValue" font-size="35">65.1 %</text>
-  <text x="300" y="700" class="nodeValue" fill="var(--solar)" id="battery2SocNodeValue" font-size="35">22.2 %</text>
+  <text x="300" y="700" class="nodeValue" fill="var(--solar)" id="battery2SocNodeValue" font-size="35">21.6 %</text>
 
    <!-- Flow value labels -->
-  <text x="460" y="103" text-anchor="middle" class="flowValue" id="solarToInverterLabel">0.01 kW</text>
-  <text x="460" y="323" text-anchor="middle" class="flowValue" id="batteryToInverterLabel">0.32 kW</text>
+  <text x="460" y="103" text-anchor="middle" class="flowValue" id="solarToInverterLabel">0.02 kW</text>
+  <text x="460" y="323" text-anchor="middle" class="flowValue" id="batteryToInverterLabel">0.38 kW</text>
   <text x="950" y="103" text-anchor="middle" class="flowValue" id="inverterToGridLabel">0.01 kW</text>
-  <text x="835" y="323" text-anchor="middle" class="flowValue" id="inverterToConsumptionLabel">0.32 kW</text>
-  <text x="1175" y="270" text-anchor="middle" class="flowValue" id="consumptionToHouseLabel">0.32 kW</text>
+  <text x="835" y="323" text-anchor="middle" class="flowValue" id="inverterToConsumptionLabel">0.36 kW</text>
+  <text x="1175" y="270" text-anchor="middle" class="flowValue" id="consumptionToHouseLabel">0.36 kW</text>
   <text x="1125" y="480" text-anchor="middle" class="flowValue" id="consumptionToEvLabel">0 kW</text>
   <!-- Nodes -->
   <g id="nodes">
@@ -206,7 +207,7 @@ body.controls-hidden #legendGroup{transform:translateY(-150px)}
     <rect x="128" y="290" width="220" height="140" rx="15" class="node"/>
     <text x="145" y="370" font-size="54">🔋</text>
     <text x="237" y="330" class="nodeTitle">BATTERY</text>
-    <text x="237" y="368" class="nodeValue" fill="var(--battery)" id="batteryNodeValue">0.3 kW</text>
+    <text x="237" y="368" class="nodeValue" fill="var(--battery)" id="batteryNodeValue">0.4 kW</text>
     <text x="237" y="399" class="nodeStatus" fill="var(--battery)" id="batteryNodeStatus">Discharging</text>
 
     <text x="39" y="650" font-size="120">🔋</text>
@@ -217,7 +218,7 @@ body.controls-hidden #legendGroup{transform:translateY(-150px)}
 
     <text x="250" y="650" font-size="120">🔋</text>
     <text x="370" y="580" class="nodeTitle">Unit 2</text>
-    <text x="370" y="618" class="nodeValue" fill="var(--battery)" id="batteryNodeValue">0.32 kW</text>
+    <text x="370" y="618" class="nodeValue" fill="var(--battery)" id="batteryNodeValue">0.38 kW</text>
     <text x="370" y="649" class="nodeStatus" fill="var(--battery)" id="batteryNodeStatus">Discharging</text>
 
     <rect x="620" y="80" width="150" height="360" rx="17" class="inverter"/>
@@ -230,7 +231,7 @@ body.controls-hidden #legendGroup{transform:translateY(-150px)}
     <rect x="910" y="300" width="210" height="120" rx="15" class="node"/>
     <text x="930" y="375" font-size="55" fill="var(--use)">◔</text>
     <text x="1030" y="337" text-anchor="middle" font-size="13" font-weight="950">CONSUMPTION</text>
-    <text x="1030" y="376" text-anchor="middle" class="nodeValue" fill="var(--use)" id="consumptionNodeValue">0.3 kW</text>
+    <text x="1030" y="376" text-anchor="middle" class="nodeValue" fill="var(--use)" id="consumptionNodeValue">0.4 kW</text>
     <text x="1030" y="407" text-anchor="middle" class="nodeStatus" fill="var(--use)">Using</text>
 
     <rect x="1210" y="75" width="220" height="140" rx="15" class="node"/>
@@ -242,7 +243,7 @@ body.controls-hidden #legendGroup{transform:translateY(-150px)}
     <rect x="1228" y="245" width="210" height="120" rx="15" class="node"/>
     <text x="1255" y="315" font-size="62" fill="var(--use)">⌂</text>
     <text x="1340" y="287" class="nodeTitle">HOUSE</text>
-    <text x="1340" y="325" class="nodeValue" fill="var(--use)" id="houseNodeValue">0.3 kW</text>
+    <text x="1340" y="325" class="nodeValue" fill="var(--use)" id="houseNodeValue">0.4 kW</text>
     <text x="1340" y="356" class="nodeStatus" fill="var(--use)">Using</text>
 
     <rect x="1228" y="475" width="210" height="120" rx="15" class="node"/>
