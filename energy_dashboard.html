@@ -150,10 +150,10 @@ body.controls-hidden #legendGroup{transform:translateY(-150px)}
   </defs>
   <!-- Flows -->
   <g id="flows">
-    <use href="#pathSolarToInverter" id="solarToInverterFlow" class="flow" stroke="var(--solar)" stroke-width="7px" />
-    <use href="#pathBatteryToInverter" id="batteryToInverterFlow" class="flow" stroke="var(--battery)" stroke-width="33px" />
-    <use href="#pathBattery1" id="battery1Flow" class="flow" stroke="var(--battery)" stroke-width="20px" />
-    <use href="#pathBattery2" id="battery1Flow" class="flow" stroke="var(--battery)" stroke-width="20px" />
+    <use href="#pathSolarToInverter" id="solarToInverterFlow" class="flow" stroke="var(--solar)" stroke-width="1px" />
+    <use href="#pathBatteryToInverter" id="batteryToInverterFlow" class="flow" stroke="var(--battery)" stroke-width="32px" />
+    <use href="#pathBattery1" id="battery1Flow" class="flow" stroke="var(--battery)" stroke-width="19px" />
+    <use href="#pathBattery2" id="battery1Flow" class="flow" stroke="var(--battery)" stroke-width="19px" />
     <use href="#pathInverterToGrid" id="inverterToGridFlow" class="flow" stroke="var(--grid)" stroke-width="1px" />
     <use href="#pathInverterToConsumption" id="inverterToConsumptionFlow" class="flow" stroke="var(--use)" stroke-width="32px" />
     <use href="#pathConsumptionToHouse" id="consumptionToHouseFlow" class="flow" stroke="var(--use)" stroke-width="32px" />
@@ -162,7 +162,7 @@ body.controls-hidden #legendGroup{transform:translateY(-150px)}
 
   <!-- Direction dots -->
   <g id="dots">
-    <circle r="5" class="dot"><animateMotion id="solarToInverterMotion" dur="2.0s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear"><mpath href="#pathSolarToInverter"/></animateMotion></circle>
+    <circle r="5" class="dot"><animateMotion id="solarToInverterMotion" dur="2.0s" repeatCount="indefinite" keyPoints="" keyTimes="0;1" calcMode="linear"><mpath href="#pathSolarToInverter"/></animateMotion></circle>
     <circle r="5" class="dot"><animateMotion id="batteryToInverterMotion" dur="1.9s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear"><mpath href="#pathBatteryToInverter"/></animateMotion></circle>
     <circle r="5" class="dot"><animateMotion id="battery1Motion" dur="1.9s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear"><mpath href="#pathBattery1"/></animateMotion></circle> 
     <circle r="5" class="dot"><animateMotion id="battery2Motion" dur="1.9s" repeatCount="indefinite" keyPoints="0;1" keyTimes="0;1" calcMode="linear"><mpath href="#pathBattery2"/></animateMotion></circle>
@@ -174,16 +174,16 @@ body.controls-hidden #legendGroup{transform:translateY(-150px)}
 
 
 
-  <text x="40" y="368" class="nodeValue" fill="var(--solar)" id="batterySocNodeValue" style="font-size:40px">32%</text>
-  <text x="90" y="700" class="nodeValue" fill="var(--solar)" id="battery1SocNodeValue" font-size="35">55.1 %</text>
-  <text x="300" y="700" class="nodeValue" fill="var(--solar)" id="battery2SocNodeValue" font-size="35">9.1 %</text>
+  <text x="40" y="368" class="nodeValue" fill="var(--solar)" id="batterySocNodeValue" style="font-size:40px">28%</text>
+  <text x="90" y="700" class="nodeValue" fill="var(--solar)" id="battery1SocNodeValue" font-size="35">51.3 %</text>
+  <text x="300" y="700" class="nodeValue" fill="var(--solar)" id="battery2SocNodeValue" font-size="35">5.1 %</text>
 
    <!-- Flow value labels -->
-  <text x="460" y="103" text-anchor="middle" class="flowValue" id="solarToInverterLabel">0.07 kW</text>
-  <text x="460" y="323" text-anchor="middle" class="flowValue" id="batteryToInverterLabel">4.40 kW</text>
+  <text x="460" y="103" text-anchor="middle" class="flowValue" id="solarToInverterLabel">0.04 kW</text>
+  <text x="460" y="323" text-anchor="middle" class="flowValue" id="batteryToInverterLabel">4.31 kW</text>
   <text x="950" y="103" text-anchor="middle" class="flowValue" id="inverterToGridLabel">0.00 kW</text>
-  <text x="835" y="323" text-anchor="middle" class="flowValue" id="inverterToConsumptionLabel">4.39 kW</text>
-  <text x="1175" y="270" text-anchor="middle" class="flowValue" id="consumptionToHouseLabel">4.39 kW</text>
+  <text x="835" y="323" text-anchor="middle" class="flowValue" id="inverterToConsumptionLabel">4.28 kW</text>
+  <text x="1175" y="270" text-anchor="middle" class="flowValue" id="consumptionToHouseLabel">4.28 kW</text>
   <text x="1125" y="480" text-anchor="middle" class="flowValue" id="consumptionToEvLabel">0 kW</text>
   <!-- Nodes -->
   <g id="nodes">
@@ -200,24 +200,24 @@ body.controls-hidden #legendGroup{transform:translateY(-150px)}
     <rect x="128" y="75" width="220" height="140" rx="15" class="node"/>
     <text x="145" y="150" font-size="54">☀️</text>
     <text x="237" y="115" class="nodeTitle">SOLAR PV</text>
-    <text x="237" y="153" class="nodeValue" fill="var(--solar)" id="solarNodeValue">0.1 kW</text>
-    <text x="237" y="184" class="nodeStatus" fill="var(--solar)" id="solarNodeStatus">Generating</text>
+    <text x="237" y="153" class="nodeValue" fill="var(--solar)" id="solarNodeValue">0.0 kW</text>
+    <text x="237" y="184" class="nodeStatus" fill="var(--solar)" id="solarNodeStatus">Idle</text>
 
     <rect x="128" y="290" width="220" height="140" rx="15" class="node"/>
     <text x="145" y="370" font-size="54">🔋</text>
     <text x="237" y="330" class="nodeTitle">BATTERY</text>
-    <text x="237" y="368" class="nodeValue" fill="var(--battery)" id="batteryNodeValue">4.4 kW</text>
+    <text x="237" y="368" class="nodeValue" fill="var(--battery)" id="batteryNodeValue">4.3 kW</text>
     <text x="237" y="399" class="nodeStatus" fill="var(--battery)" id="batteryNodeStatus">Discharging</text>
 
     <text x="39" y="650" font-size="120">🔋</text>
     <path id="pathBattery1_soc" stroke-linecap="butt" d="M80 630 H120" />
     <text x="159" y="580" class="nodeTitle">Unit 1</text>
-    <text x="159" y="618" class="nodeValue" fill="var(--battery)" id="batteryNodeValue">2.20 kW</text>
+    <text x="159" y="618" class="nodeValue" fill="var(--battery)" id="batteryNodeValue">2.15 kW</text>
     <text x="159" y="649" class="nodeStatus" fill="var(--battery)" id="batteryNodeStatus">Discharging</text>
 
     <text x="250" y="650" font-size="120">🪫</text>
     <text x="370" y="580" class="nodeTitle">Unit 2</text>
-    <text x="370" y="618" class="nodeValue" fill="var(--battery)" id="batteryNodeValue">2.20 kW</text>
+    <text x="370" y="618" class="nodeValue" fill="var(--battery)" id="batteryNodeValue">2.15 kW</text>
     <text x="370" y="649" class="nodeStatus" fill="var(--battery)" id="batteryNodeStatus">Discharging</text>
 
     <rect x="620" y="80" width="150" height="360" rx="17" class="inverter"/>
@@ -230,7 +230,7 @@ body.controls-hidden #legendGroup{transform:translateY(-150px)}
     <rect x="910" y="300" width="210" height="120" rx="15" class="node"/>
     <text x="930" y="375" font-size="55" fill="var(--use)">◔</text>
     <text x="1030" y="337" text-anchor="middle" font-size="13" font-weight="950">CONSUMPTION</text>
-    <text x="1030" y="376" text-anchor="middle" class="nodeValue" fill="var(--use)" id="consumptionNodeValue">4.4 kW</text>
+    <text x="1030" y="376" text-anchor="middle" class="nodeValue" fill="var(--use)" id="consumptionNodeValue">4.3 kW</text>
     <text x="1030" y="407" text-anchor="middle" class="nodeStatus" fill="var(--use)">Using</text>
 
     <rect x="1210" y="75" width="220" height="140" rx="15" class="node"/>
@@ -242,7 +242,7 @@ body.controls-hidden #legendGroup{transform:translateY(-150px)}
     <rect x="1228" y="245" width="210" height="120" rx="15" class="node"/>
     <text x="1255" y="315" font-size="62" fill="var(--use)">⌂</text>
     <text x="1340" y="287" class="nodeTitle">HOUSE</text>
-    <text x="1340" y="325" class="nodeValue" fill="var(--use)" id="houseNodeValue">4.4 kW</text>
+    <text x="1340" y="325" class="nodeValue" fill="var(--use)" id="houseNodeValue">4.3 kW</text>
     <text x="1340" y="356" class="nodeStatus" fill="var(--use)">Using</text>
 
     <rect x="1228" y="475" width="210" height="120" rx="15" class="node"/>
